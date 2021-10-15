@@ -1,0 +1,38 @@
+# Retorna a decomposição do número fornecido em números primos
+# Pseudocódigo:
+# 1. Receber o número;
+# Dividi-lo por seu menor divisor primo
+# Pegar o quociente e dividir pelo menor divisor primo deste quociente
+# E assim sucessivamente
+# Fazer função que retorna o menor divisor primo de um número)
+# fatoração(n) = y
+
+def é_primo(n):
+    count = 2
+    while count < n:
+        if n % count != 0:
+            count = count + 1
+        else:
+            return False
+    return True
+
+def menor_divisor_primo(n):
+    divisor = 2
+    while divisor < n:
+        if é_primo(divisor) == True:
+            if n % divisor == 0:
+                return divisor
+            else:
+                divisor = divisor + 1
+        else:
+            divisor = divisor + 1
+    return divisor
+    
+   
+
+
+'''
+n = int(input("Digite um número inteiro positivo: "))
+if n <1 print("Número inválido!")
+while  
+'''
