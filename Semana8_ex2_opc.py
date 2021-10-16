@@ -7,12 +7,8 @@ lista = []
 while n != 0:
     n = int(input("Digite um número inteiro: "))
     lista.append(n)
-del lista[-1]
-lista_inversa = []
 tamanho = - len(lista)
-x = -1
+x = -2
 while x >= (tamanho):
-    lista_inversa.append(lista[x])
+    print(lista[x])
     x = x - 1
-for i in lista_inversa:
-    print(i)
